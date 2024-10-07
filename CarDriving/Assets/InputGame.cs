@@ -52,17 +52,20 @@ public class InputGame : MonoBehaviour
 
     private void ChangeSitCar(bool sitCar)
     {
-        if (sitCar)
+        if(Platfotrm == "mobile")
         {
-            playerlInpute.SetActive(false);
-            carlInpute.SetActive(true);
+            if (sitCar)
+            {
+                playerlInpute.SetActive(false);
+                carlInpute.SetActive(true);
 
-        }
-        else
-        {
-            playerlInpute.SetActive(true);
-            carlInpute.SetActive(false);
+            }
+            else
+            {
+                playerlInpute.SetActive(true);
+                carlInpute.SetActive(false);
 
-        }
+            }
+        }       
     }
 }

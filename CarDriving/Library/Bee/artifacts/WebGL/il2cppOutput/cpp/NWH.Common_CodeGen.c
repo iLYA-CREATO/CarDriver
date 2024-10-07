@@ -315,6 +315,9 @@ extern void CameraControlsActions_Enable_m394D38C51790ECABE9B42A38D34CF2713F2FAD
 extern void CameraControlsActions_Disable_mE9FA492CD10C126D376B32D3B8A700305511ABB1 (void);
 extern void CameraControlsActions_get_enabled_m33D3A2766872D6094F9CD7D3A14069DE8F450640 (void);
 extern void CameraControlsActions_op_Implicit_mBABE26B5157D35DCFE0CCA46B53E5519160B10DA (void);
+extern void CameraControlsActions_AddCallbacks_m2AB2BA034FC6AC3E3372EDE98684E9E4AC7E9458 (void);
+extern void CameraControlsActions_UnregisterCallbacks_m40788CA0E95A879EC2CE359FEFB508AC035325DC (void);
+extern void CameraControlsActions_RemoveCallbacks_m8A7E20E2FAADB1769DAA5CA5A4408475910A0702 (void);
 extern void CameraControlsActions_SetCallbacks_mDE73F65B45C17F84F911BE2C8291EB93307849AB (void);
 extern void SceneControlsActions__ctor_m0A06967136D0F88254E10895E72B687FB7F17676 (void);
 extern void SceneControlsActions_get_ChangeVehicle_m7A8E417348B0A17E7AA5FFF7F9387059DEF3485C (void);
@@ -327,6 +330,9 @@ extern void SceneControlsActions_Enable_m1328E4B81E6E48FDADDA49357FE5D654114C644
 extern void SceneControlsActions_Disable_mF442547ECFE530B3D3DB4D5DA0D9F2030C0C54FF (void);
 extern void SceneControlsActions_get_enabled_m4D989FE520478F65C6D131332078551781D89C7A (void);
 extern void SceneControlsActions_op_Implicit_mF1A96BD69CF02A67793FE8BFFBA4761A9B5ABB1A (void);
+extern void SceneControlsActions_AddCallbacks_m906D933DB0E711097ED267CFE5951FB02735E315 (void);
+extern void SceneControlsActions_UnregisterCallbacks_m4A628F1482D2BB4876EAA7339ECF63ED3E470EE9 (void);
+extern void SceneControlsActions_RemoveCallbacks_mEF1B836CEC144E3FD75D4A9D9E4D80C4C1BD39DD (void);
 extern void SceneControlsActions_SetCallbacks_mEA9C36E34B6949BF29170830BC60057A146C9B0D (void);
 extern void InputUtils_TryGetButton_m3C5D2A670260E54C63DE7FA0B6B51D227C961185 (void);
 extern void InputUtils_TryGetButtonDown_m779664F255493B96E6533F2DA9BF6F16B9D92A00 (void);
@@ -463,7 +469,7 @@ extern void U3CU3Ec_U3CLateUpdateU3Eb__52_4_mA6D8CAD26B0FA9839359B8CD71809D53A53
 extern void VehicleCamera_Awake_m0599CDD964E881A26955B6A7496A544C49806294 (void);
 extern void VehicleCamera__ctor_m9BDDC99A3D4B644449EF6306B5A88E569F263EE5 (void);
 extern void AssetInfo__ctor_m1C40740C7E8978C70E4BE4F9AFEDC44B45EC863D (void);
-static Il2CppMethodPointer s_methodPointers[545] = 
+static Il2CppMethodPointer s_methodPointers[551] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mDA4BA157F6D9F3A7C036B10E8014DC0F02639834,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m99F7D67F96F7CDD7F2314043B4B66D73296399CC,
@@ -848,6 +854,9 @@ static Il2CppMethodPointer s_methodPointers[545] =
 	CameraControlsActions_Disable_mE9FA492CD10C126D376B32D3B8A700305511ABB1,
 	CameraControlsActions_get_enabled_m33D3A2766872D6094F9CD7D3A14069DE8F450640,
 	CameraControlsActions_op_Implicit_mBABE26B5157D35DCFE0CCA46B53E5519160B10DA,
+	CameraControlsActions_AddCallbacks_m2AB2BA034FC6AC3E3372EDE98684E9E4AC7E9458,
+	CameraControlsActions_UnregisterCallbacks_m40788CA0E95A879EC2CE359FEFB508AC035325DC,
+	CameraControlsActions_RemoveCallbacks_m8A7E20E2FAADB1769DAA5CA5A4408475910A0702,
 	CameraControlsActions_SetCallbacks_mDE73F65B45C17F84F911BE2C8291EB93307849AB,
 	SceneControlsActions__ctor_m0A06967136D0F88254E10895E72B687FB7F17676,
 	SceneControlsActions_get_ChangeVehicle_m7A8E417348B0A17E7AA5FFF7F9387059DEF3485C,
@@ -860,6 +869,9 @@ static Il2CppMethodPointer s_methodPointers[545] =
 	SceneControlsActions_Disable_mF442547ECFE530B3D3DB4D5DA0D9F2030C0C54FF,
 	SceneControlsActions_get_enabled_m4D989FE520478F65C6D131332078551781D89C7A,
 	SceneControlsActions_op_Implicit_mF1A96BD69CF02A67793FE8BFFBA4761A9B5ABB1A,
+	SceneControlsActions_AddCallbacks_m906D933DB0E711097ED267CFE5951FB02735E315,
+	SceneControlsActions_UnregisterCallbacks_m4A628F1482D2BB4876EAA7339ECF63ED3E470EE9,
+	SceneControlsActions_RemoveCallbacks_mEF1B836CEC144E3FD75D4A9D9E4D80C4C1BD39DD,
 	SceneControlsActions_SetCallbacks_mEA9C36E34B6949BF29170830BC60057A146C9B0D,
 	NULL,
 	NULL,
@@ -1022,6 +1034,9 @@ extern void CameraControlsActions_Get_m8F5D893A4381678566E3212550A3BADD961FDAB9_
 extern void CameraControlsActions_Enable_m394D38C51790ECABE9B42A38D34CF2713F2FAD60_AdjustorThunk (void);
 extern void CameraControlsActions_Disable_mE9FA492CD10C126D376B32D3B8A700305511ABB1_AdjustorThunk (void);
 extern void CameraControlsActions_get_enabled_m33D3A2766872D6094F9CD7D3A14069DE8F450640_AdjustorThunk (void);
+extern void CameraControlsActions_AddCallbacks_m2AB2BA034FC6AC3E3372EDE98684E9E4AC7E9458_AdjustorThunk (void);
+extern void CameraControlsActions_UnregisterCallbacks_m40788CA0E95A879EC2CE359FEFB508AC035325DC_AdjustorThunk (void);
+extern void CameraControlsActions_RemoveCallbacks_m8A7E20E2FAADB1769DAA5CA5A4408475910A0702_AdjustorThunk (void);
 extern void CameraControlsActions_SetCallbacks_mDE73F65B45C17F84F911BE2C8291EB93307849AB_AdjustorThunk (void);
 extern void SceneControlsActions__ctor_m0A06967136D0F88254E10895E72B687FB7F17676_AdjustorThunk (void);
 extern void SceneControlsActions_get_ChangeVehicle_m7A8E417348B0A17E7AA5FFF7F9387059DEF3485C_AdjustorThunk (void);
@@ -1033,8 +1048,11 @@ extern void SceneControlsActions_Get_m143AF9E08A768BD90850F462A842E2598D20D75C_A
 extern void SceneControlsActions_Enable_m1328E4B81E6E48FDADDA49357FE5D654114C6440_AdjustorThunk (void);
 extern void SceneControlsActions_Disable_mF442547ECFE530B3D3DB4D5DA0D9F2030C0C54FF_AdjustorThunk (void);
 extern void SceneControlsActions_get_enabled_m4D989FE520478F65C6D131332078551781D89C7A_AdjustorThunk (void);
+extern void SceneControlsActions_AddCallbacks_m906D933DB0E711097ED267CFE5951FB02735E315_AdjustorThunk (void);
+extern void SceneControlsActions_UnregisterCallbacks_m4A628F1482D2BB4876EAA7339ECF63ED3E470EE9_AdjustorThunk (void);
+extern void SceneControlsActions_RemoveCallbacks_mEF1B836CEC144E3FD75D4A9D9E4D80C4C1BD39DD_AdjustorThunk (void);
 extern void SceneControlsActions_SetCallbacks_mEA9C36E34B6949BF29170830BC60057A146C9B0D_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[23] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[29] = 
 {
 	{ 0x06000174, CameraControlsActions__ctor_mB4357D113F003E0A8598D2EE4BFEFA73A38AF769_AdjustorThunk },
 	{ 0x06000175, CameraControlsActions_get_ChangeCamera_mD8E0B3A8ECE2205B026374EE8DD391361FCD5D38_AdjustorThunk },
@@ -1047,20 +1065,26 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[23] =
 	{ 0x0600017C, CameraControlsActions_Enable_m394D38C51790ECABE9B42A38D34CF2713F2FAD60_AdjustorThunk },
 	{ 0x0600017D, CameraControlsActions_Disable_mE9FA492CD10C126D376B32D3B8A700305511ABB1_AdjustorThunk },
 	{ 0x0600017E, CameraControlsActions_get_enabled_m33D3A2766872D6094F9CD7D3A14069DE8F450640_AdjustorThunk },
-	{ 0x06000180, CameraControlsActions_SetCallbacks_mDE73F65B45C17F84F911BE2C8291EB93307849AB_AdjustorThunk },
-	{ 0x06000181, SceneControlsActions__ctor_m0A06967136D0F88254E10895E72B687FB7F17676_AdjustorThunk },
-	{ 0x06000182, SceneControlsActions_get_ChangeVehicle_m7A8E417348B0A17E7AA5FFF7F9387059DEF3485C_AdjustorThunk },
-	{ 0x06000183, SceneControlsActions_get_FPSMovement_mB7B03462B80E6BAC074B16F5D4EAD4B6B7A4B473_AdjustorThunk },
-	{ 0x06000184, SceneControlsActions_get_ToggleGUI_m7C553ECF52D935782B45155B0033D983FD71EDB4_AdjustorThunk },
-	{ 0x06000185, SceneControlsActions_get_DragObjectModifier_m65273D2E37D04B72DE9372A79C1D7ECEAFB82C03_AdjustorThunk },
-	{ 0x06000186, SceneControlsActions_get_ShowCursor_m0128B4DF24842CDF39B28315604CDCF0590CD2A2_AdjustorThunk },
-	{ 0x06000187, SceneControlsActions_Get_m143AF9E08A768BD90850F462A842E2598D20D75C_AdjustorThunk },
-	{ 0x06000188, SceneControlsActions_Enable_m1328E4B81E6E48FDADDA49357FE5D654114C6440_AdjustorThunk },
-	{ 0x06000189, SceneControlsActions_Disable_mF442547ECFE530B3D3DB4D5DA0D9F2030C0C54FF_AdjustorThunk },
-	{ 0x0600018A, SceneControlsActions_get_enabled_m4D989FE520478F65C6D131332078551781D89C7A_AdjustorThunk },
-	{ 0x0600018C, SceneControlsActions_SetCallbacks_mEA9C36E34B6949BF29170830BC60057A146C9B0D_AdjustorThunk },
+	{ 0x06000180, CameraControlsActions_AddCallbacks_m2AB2BA034FC6AC3E3372EDE98684E9E4AC7E9458_AdjustorThunk },
+	{ 0x06000181, CameraControlsActions_UnregisterCallbacks_m40788CA0E95A879EC2CE359FEFB508AC035325DC_AdjustorThunk },
+	{ 0x06000182, CameraControlsActions_RemoveCallbacks_m8A7E20E2FAADB1769DAA5CA5A4408475910A0702_AdjustorThunk },
+	{ 0x06000183, CameraControlsActions_SetCallbacks_mDE73F65B45C17F84F911BE2C8291EB93307849AB_AdjustorThunk },
+	{ 0x06000184, SceneControlsActions__ctor_m0A06967136D0F88254E10895E72B687FB7F17676_AdjustorThunk },
+	{ 0x06000185, SceneControlsActions_get_ChangeVehicle_m7A8E417348B0A17E7AA5FFF7F9387059DEF3485C_AdjustorThunk },
+	{ 0x06000186, SceneControlsActions_get_FPSMovement_mB7B03462B80E6BAC074B16F5D4EAD4B6B7A4B473_AdjustorThunk },
+	{ 0x06000187, SceneControlsActions_get_ToggleGUI_m7C553ECF52D935782B45155B0033D983FD71EDB4_AdjustorThunk },
+	{ 0x06000188, SceneControlsActions_get_DragObjectModifier_m65273D2E37D04B72DE9372A79C1D7ECEAFB82C03_AdjustorThunk },
+	{ 0x06000189, SceneControlsActions_get_ShowCursor_m0128B4DF24842CDF39B28315604CDCF0590CD2A2_AdjustorThunk },
+	{ 0x0600018A, SceneControlsActions_Get_m143AF9E08A768BD90850F462A842E2598D20D75C_AdjustorThunk },
+	{ 0x0600018B, SceneControlsActions_Enable_m1328E4B81E6E48FDADDA49357FE5D654114C6440_AdjustorThunk },
+	{ 0x0600018C, SceneControlsActions_Disable_mF442547ECFE530B3D3DB4D5DA0D9F2030C0C54FF_AdjustorThunk },
+	{ 0x0600018D, SceneControlsActions_get_enabled_m4D989FE520478F65C6D131332078551781D89C7A_AdjustorThunk },
+	{ 0x0600018F, SceneControlsActions_AddCallbacks_m906D933DB0E711097ED267CFE5951FB02735E315_AdjustorThunk },
+	{ 0x06000190, SceneControlsActions_UnregisterCallbacks_m4A628F1482D2BB4876EAA7339ECF63ED3E470EE9_AdjustorThunk },
+	{ 0x06000191, SceneControlsActions_RemoveCallbacks_mEF1B836CEC144E3FD75D4A9D9E4D80C4C1BD39DD_AdjustorThunk },
+	{ 0x06000192, SceneControlsActions_SetCallbacks_mEA9C36E34B6949BF29170830BC60057A146C9B0D_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[545] = 
+static const int32_t s_InvokerIndices[551] = 
 {
 	8368,
 	5686,
@@ -1447,6 +1471,9 @@ static const int32_t s_InvokerIndices[545] =
 	7999,
 	4514,
 	4514,
+	4514,
+	4514,
+	4514,
 	5577,
 	5577,
 	5577,
@@ -1457,6 +1484,9 @@ static const int32_t s_InvokerIndices[545] =
 	5686,
 	5479,
 	8000,
+	4514,
+	4514,
+	4514,
 	4514,
 	0,
 	0,
@@ -1672,9 +1702,9 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_NWH_Common_CodeGenModule;
 const Il2CppCodeGenModule g_NWH_Common_CodeGenModule = 
 {
 	"NWH.Common.dll",
-	545,
+	551,
 	s_methodPointers,
-	23,
+	29,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

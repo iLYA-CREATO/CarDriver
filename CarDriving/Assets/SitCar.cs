@@ -70,6 +70,7 @@ public class SitCar : MonoBehaviour
                     dataCar[i].carController.enabled = true;
                     dataCar[i].CameraModul.SetActive(true);
                     player.gameObject.transform.SetParent(dataCar[i].carModel.transform);
+                    player.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
                     player.SetActive(false);
                 }
                 else
@@ -78,6 +79,7 @@ public class SitCar : MonoBehaviour
                     dataCar[i].carController.enabled = false;
                     dataCar[i].CameraModul.SetActive(false);
                     player.gameObject.transform.SetParent(playerContent.transform);
+                    player.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
                     player.SetActive(true);
                 }
             }

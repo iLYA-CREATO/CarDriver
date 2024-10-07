@@ -38,7 +38,7 @@ public class AllRaycast : MonoBehaviour
             RaycastHit hit;
 
             // Выполняем raycast
-            if (Physics.Raycast(ray, out hit, 2))
+            if (Physics.Raycast(ray, out hit, 1))
             {
                 if (hit.collider.tag == "Vehicle")
                 {
